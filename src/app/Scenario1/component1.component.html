@@ -1,0 +1,13 @@
+<header>
+  <div class="container">
+    <a routerLink="/" class="logo">{{Apptitle}}</a>
+    <nav>
+      <ul>
+        <li><a routerLink="/">Scenario1</a></li>
+      </ul>
+    </nav>
+    Enter Text:
+    <input type="text" #msg placeholder="text"><br>
+    <button (click)="print(msg.value)">Submit</button>
+  </div>
+</header>

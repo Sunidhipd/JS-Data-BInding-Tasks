@@ -1,0 +1,8 @@
+<h2>Scenario-3 Parent</h2>
+Enter text:
+<form>
+   <input type="text" name="msg" [(ngModel)]="msg" placeholder="text"><br />
+   <button (click)="print(msg)">Submit</button>
+</form>
+
+<app-scenario3-child [childMessage]="valueParent"></app-scenario3-child>
